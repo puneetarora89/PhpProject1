@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>templateLib</short-name>
+    <uri>/WEB-INF/tags/template/</uri>
+    <tag-file>
+        <name>head</name>
+        <path>/WEB-INF/tags/template/head.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>header</name>
+        <path>/WEB-INF/tags/template/header.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>navigation</name>
+        <path>/WEB-INF/tags/template/navigation.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>principalNavigation</name>
+        <path>/WEB-INF/tags/template/principal/navigation.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>hodNavigation</name>
+        <path>/WEB-INF/tags/template/hod/navigation.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>supAdminNavigation</name>
+        <path>/WEB-INF/tags/template/admin/navigation.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>breadcrumbs</name>
+        <path>/WEB-INF/tags/template/breadcrumbs.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>pageheader</name>
+        <path>/WEB-INF/tags/template/pageheader.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>footer</name>
+        <path>/WEB-INF/tags/template/footer.tag</path>
+    </tag-file>
+</taglib>

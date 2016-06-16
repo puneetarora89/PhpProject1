@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>schoolLibs</short-name>
+    <uri>/WEB-INF/tags/school/</uri>
+
+    <tag>
+        <name>schoolListWithoutPrincipal</name>
+        <tag-class>com.seri.web.utils.tags.SchoolListWithoutPrincipalTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>loginId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>activeSchoolList</name>
+        <tag-class>com.seri.web.utils.tags.AllActiveSchoolListTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>ctrlName</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>selectedSchool</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>schoolTeacherCount</name>
+        <tag-class>com.seri.web.utils.tags.SchoolTeacherCountTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>schoolId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>schoolStudentCount</name>
+        <tag-class>com.seri.web.utils.tags.SchoolStudentCountTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>schoolId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag-file>
+        <name>school_form</name>
+        <path>/WEB-INF/tags/school/school_profile.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>addUpdateSchool</name>
+        <path>/WEB-INF/tags/school/add_update_school.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>manageSchool</name>
+        <path>/WEB-INF/tags/school/manage_school.tag</path>
+    </tag-file>
+</taglib>

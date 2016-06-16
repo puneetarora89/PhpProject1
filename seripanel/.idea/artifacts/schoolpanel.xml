@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="schoolpanel">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="SpringSecurityHelloWorld.war">
+      <element id="artifact" artifact-name="spring-security-helloworld-xml:war exploded" />
+    </root>
+  </artifact>
+</component>

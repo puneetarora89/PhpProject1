@@ -1,0 +1,15 @@
+<%@ taglib uri="commonLib" prefix="commonLib" %>
+<%@ taglib uri="designTemplate" prefix="design" %>
+<%@ taglib uri="adminTagLib" prefix="adminLibs" %>
+<%@ taglib uri="schoolLibs" prefix="schoolLibs" %>
+<%@ taglib uri="standardLibs" prefix="standardLibs" %>
+<%@ taglib uri="studentLibs" prefix="studentLibs" %>
+<%@ taglib uri="teacherLibs" prefix="teacherLibs" %>
+<%@ taglib uri="emailLibs" prefix="emailLibs" %>
+<%@ taglib uri="utilsLibs" prefix="utilLibs" %>
+<%@ taglib uri="hodLibs" prefix="hodLibs" %>
+<%@ taglib uri="parentLibs" prefix="parentLibs" %>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>

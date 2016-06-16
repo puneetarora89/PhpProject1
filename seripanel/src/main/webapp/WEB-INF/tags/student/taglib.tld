@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>studentLibs</short-name>
+    <uri>/WEB-INF/tags/student/</uri>
+
+    <tag>
+        <name>studentListWothoutParentProfile</name>
+        <tag-class>com.seri.web.utils.tags.StudentListWothoutParentProfileTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>ctrlName</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag-file>
+        <name>manageStudent</name>
+        <path>/WEB-INF/tags/student/manage_student.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>studentProfile</name>
+        <path>/WEB-INF/tags/student/student_profile.tag</path>
+    </tag-file>
+
+</taglib>

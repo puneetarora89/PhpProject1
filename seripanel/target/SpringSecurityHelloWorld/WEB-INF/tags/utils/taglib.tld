@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <tlib-version>1.0</tlib-version>
+    <short-name>utilLibs</short-name>
+    <uri>/WEB-INF/tags/utils/</uri>
+
+    <tag>
+        <name>nameUsingEmail</name>
+        <tag-class>com.seri.web.utils.tags.UserNameUsingMailTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>loginId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>getCountryList</name>
+        <tag-class>com.seri.web.utils.tags.CountrySelectorTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>ctrlName</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>ctrlId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>ctrlClass</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>selectedCountry</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>getDepartmentList</name>
+        <tag-class>com.seri.web.utils.tags.DepartmentListTag</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>ctrlName</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>ctrlId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>ctrlClass</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>selectedDepartment</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+
+    <tag>
+        <name>getLoginDetails</name>
+        <tag-class>com.seri.web.utils.tags.LoggedInUserDetails</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>propName</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>getSchoolAttribute</name>
+        <tag-class>com.seri.web.utils.tags.SchoolAttributeUsingId</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>propName</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>schoolId</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag-file>
+        <name>dateFormatter</name>
+        <path>/WEB-INF/tags/utils/dateFormatter.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>pagingTag</name>
+        <path>/WEB-INF/tags/utils/paging.tag</path>
+    </tag-file>
+
+    <tag-file>
+        <name>recordSelector</name>
+        <path>/WEB-INF/tags/utils/recordSelector.tag</path>
+    </tag-file>
+
+</taglib>
